@@ -154,7 +154,7 @@ class WordByWordAnimated{
 new WordByWordAnimated({
   method : 'wordByWord',
   container : '[textAnimatedContainer]',
-  lineBreak : [1,3],
+  lineBreak : [2,5],
   child : '[textAnimated-name="first"]',
   keyframes : 'titleRevealY'
 
@@ -174,12 +174,28 @@ new WordByWordAnimated({
   keyframes : 'titleRevealX',
   animationOffset : 2.5
 })
+
 new WordByWordAnimated({
   method : 'letterByLetter',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="four"]',
   keyframes : 'flipY',
   animationOffset : 5.4
+})
+
+new WordByWordAnimated({
+  method : 'letterByLetter',
+  container : '[textAnimatedContainer]',
+  child : '[textAnimated-name="five"]',
+  keyframes : 'titleRevealY',
+  animationOffset : 7
+})
+new WordByWordAnimated({
+  method : 'letterByLetter',
+  container : '[textAnimatedContainer]',
+  child : '[textAnimated-name="six"]',
+  keyframes : 'flipX',
+  animationOffset : 9
 })
 
 
