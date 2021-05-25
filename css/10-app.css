@@ -7,11 +7,6 @@ section{
   flex-direction: column;
 }
 
-.blankAnimated{
-  content : ' ';
-  width : 1.375rem;
-} 
-
 @keyframes titleRevealY{
 
   from {

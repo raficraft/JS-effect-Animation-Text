@@ -71,18 +71,23 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 - animationDuration : Durée de l'animation des mots ou lettre du texte.
 - shiftDelay : Délai d'animation entre deux mots ou deux lettres (voir, précisions).
 - animationDelay : Délait de décalage d'animation.
+- spacingDimension : Dimension d'espacement entre les mots pour l'animation lettre par lettre
 
 # Précision sur les paramètres
 
 - lineBreak : Tableau de valeur numériques
   - Exemple : [2, 5]
-  - Ajoute un saut de ligne après le deuxième et cinquième mot ou lettre. Pour l'animation lettre par lettre, les espaces sont considérés comme des caractères à part entière
+  - Ajoute un saut de ligne après le deuxième et cinquième mot ou lettre. Pour l'animation lettre par lettre, les espaces sont considérés comme des caractères à part entière.
 
 - shiftDelay : Valeur comprise entre 0 et 1. 
   - Exemple : 0.2
   - Dans un texte de quatre mots, l'animation du second mot ce déclenchera après un délai de 0.2s, le deuxième après un délai de 0.4s , le troisième de 0.6s et le quatrième 0.8s après le premier mot. Idem pour l'animation lettre à lettre.
 
+- spacingDimension : Chaîne de caractères indiquant la largeur d'espacement entre deux mots pour l'animation lettre par lettre. La valeur par défaut est exprimé en REM pour un dimensionnement de 1.375rem
+
 # Animation
 
 Le script est livré avec un fichier CSS, contenant quatre animation de texte. Vous pouvez créer vos propres animation et les attaché à votre texte avec le paramètre "keyframes".
+
+NB : Pour l'animation lettre par lettre, les espacement sont considéré comme des caractères à part entiène.
 
