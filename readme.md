@@ -4,24 +4,24 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 #Installation et utilisation
 
-## Instalation
+## Installation
 
--Copier le script dans votre repértoire JS (engine dans l'exemple ci-dessous)
--Linké le script dans votre fichier HTML
+- Copier le script dans votre repértoire JS (engine dans l'exemple ci-dessous)
+- Linké le script dans votre fichier HTML
 
 ```HTML
 <script type="text/javascript" src="engine/TextAninated.js" defer></script>
 ```
 
--Installer le script
+- Installer le script
 
 ```HTML
 <script type="text/javascript" src="engine/TextAninated.js" defer></script>
 
 ```
 
--Attaché un attribut de donnée au container parent contenant le texte à animé
--Utilisé l'attribut de donnée "textAnimated-name" sur le texte à animé
+- Attaché un attribut de donnée au container parent contenant le texte à animé
+- Utilisé l'attribut de donnée "textAnimated-name" sur le texte à animé
 
 ```HTML
 
@@ -38,11 +38,11 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 ```
 
--NB : vous pouvez utiliser les mêmes attribut de données que dans l'exemple mais ce n'est pas obligatoire. Vous pouvez ciblé les éléments HTML avec des selecteurs classique. Seul le seclecteur du container parent doit être unique.
+- NB : vous pouvez utiliser les mêmes attribut de données que dans l'exemple mais ce n'est pas obligatoire. Vous pouvez ciblé les éléments HTML avec des selecteurs classique. Seul le seclecteur du container parent doit être unique.
 
 ## Utilisation
 
--Instacié la Class dans votre balise script ou la suite de la Class elle même.
+- Instacié la Class dans votre balise script ou la suite de la Class elle même.
 
 ```HTML
 <script type="text/javascript" src="engine/TextAninated.js" defer>
