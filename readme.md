@@ -67,6 +67,7 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 - container : Element du DOM contentant le texte à animé. Sélécteur CSS (id,class...) ou attribut de données.
 - child : Element du dom à animé. Sélécteur CSS (id,class...) ou attribut de données.
 - lineBreak : Tableau numérique indiquant ou effectuer des saut de lignes (voir, précisions).
+- keyframes : Fait référence à l'animation css associé 
 - animationDuration : Durée de l'animation des mots ou lettre du texte.
 - shiftDelay : Délai d'animation entre deux mots ou deux lettres (voir, précisions).
 - animationDelay : Délait de décalage d'animation.
@@ -80,4 +81,8 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 - shiftDelay : Valeur comprise entre 0 et 1. 
   - Exemple : 0.2
   - Dans un texte de quatre mots, l'animation du second mot ce déclenchera après un délai de 0.2s, le deuxième après un délai de 0.4s , le troisième de 0.6s et le quatrième 0.8s après le premier mot. Idem pour l'animation lettre à lettre.
+
+# Animation
+
+Le script est livré avec un fichier CSS, contenant quatre animation de texte. Vous pouvez créer vos propres animation et les attaché à votre texte avec le paramètre "keyframes".
 
