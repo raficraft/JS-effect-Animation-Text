@@ -11,7 +11,7 @@
 	})
  }
 
-class WordByWordAnimated{
+class TextAnimated{
   constructor(options = {}){
 
     this.options =  Object.assign({},{
@@ -87,8 +87,6 @@ class WordByWordAnimated{
    const letterArray = []
    const wordsCount = words.length -1
 
-   console.log(wordsCount -1);
-
     words.forEach((word,key) => {
 
       const letters = word.split('')
@@ -97,7 +95,6 @@ class WordByWordAnimated{
       });
 
       if(key < wordsCount){
-        console.log(key);
         letterArray.push(' ')
       }
     })
@@ -117,10 +114,8 @@ class WordByWordAnimated{
       const shiftDelay = (key * this.options.shiftDelay) + this.options.animationOffset
       newEl.style.animationDelay = `${shiftDelay}s`
 
-      console.log(breakPoints , key , letter);
       if(!breakPoints.includes(key) ){
         if(letter === ' '){
-          console.log('blank');
           newEl.innerHTML = '&ensp;'
           newEl.classList.add('blankAnimated')
         }
@@ -142,7 +137,9 @@ class WordByWordAnimated{
   }
 }
 
-new WordByWordAnimated({
+
+
+new TextAnimated({
   method : 'wordByWord',
   container : '[textAnimatedContainer]',
   lineBreak : [2,5],
@@ -150,7 +147,7 @@ new WordByWordAnimated({
   keyframes : 'titleRevealY'
 
 })
-new WordByWordAnimated({
+new TextAnimated({
   method : 'wordByWord',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="second"]',
@@ -158,7 +155,7 @@ new WordByWordAnimated({
   animationOffset : 1.7,
 })
 
-new WordByWordAnimated({
+new TextAnimated({
   method : 'letterByLetter',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="third"]',
@@ -166,7 +163,7 @@ new WordByWordAnimated({
   animationOffset : 2.5
 })
 
-new WordByWordAnimated({
+new TextAnimated({
   method : 'letterByLetter',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="four"]',
@@ -174,14 +171,14 @@ new WordByWordAnimated({
   animationOffset : 5.4
 })
 
-new WordByWordAnimated({
+new TextAnimated({
   method : 'letterByLetter',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="five"]',
   keyframes : 'titleRevealY',
   animationOffset : 7
 })
-new WordByWordAnimated({
+new TextAnimated({
   method : 'letterByLetter',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="six"]',
