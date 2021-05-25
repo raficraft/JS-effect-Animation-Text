@@ -48,10 +48,10 @@ class WordByWordAnimated{
 
   
 
-        let delay = this.options.animationDuration
         const words = element.textContent.trim(' ').split(' ')
         const newContainer = document.createElement('span')
-
+        
+        let delay = this.options.animationDuration
         newContainer.style.overflow = 'hidden'
         newContainer.style.display = 'inline-block' 
         
@@ -60,7 +60,6 @@ class WordByWordAnimated{
           const newEl = document.createElement('span')
           newEl.style.display = 'inline-block'
           newEl.style.animation = `${this.options.keyframes} ${delay}s both`
-
          
           const shiftDelay = (key * this.options.shiftDelay) + this.options.animationOffset
           newEl.style.animationDelay = `${shiftDelay}s`
@@ -73,7 +72,6 @@ class WordByWordAnimated{
             const lineBreak = document.createElement('br')
             newContainer.insertAdjacentElement('beforeend',lineBreak)
           }
-
        
         });
 
@@ -107,15 +105,11 @@ class WordByWordAnimated{
     const newContainer = document.createElement('span')
     newContainer.style.overflow = 'hidden'
     newContainer.style.display = 'inline-block' 
-
-    console.log(letterArray);
+    let delay = this.options.animationDuration
 
      
     letterArray.forEach((letter,key) => {
-
-   //  console.log(letter);
-
-      let delay = this.options.animationDuration
+      
       const newEl = document.createElement('span')
       newEl.style.display = 'inline-block'
       newEl.style.animation = `${this.options.keyframes} ${delay}s both`
@@ -144,10 +138,7 @@ class WordByWordAnimated{
 
     element.textContent = ''
     element.insertAdjacentElement('beforeend',newContainer)
-
-
-
-
+    
   }
 }
 
