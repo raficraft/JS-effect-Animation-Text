@@ -46,7 +46,6 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 ```HTML
 <script type="text/javascript" src="engine/TextAninated.js" defer>
-
   new TextAnimated({
   method : 'wordByWord',
   container : '[textAnimatedContainer]',
@@ -54,9 +53,7 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
   lineBreak : [2,5],  
   keyframes : 'titleRevealY'
   })
-
 </script>
-
 ```
 
 # Paramètres
