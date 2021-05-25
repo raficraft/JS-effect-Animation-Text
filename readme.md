@@ -1,3 +1,6 @@
+# Démo
+[Démo](https://raficraft.github.io/JS-effect-Animation-Text/)
+
 # Animation de texte. Mot à mot ou lettre par lettre
 
 Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou lettre par lettre.
