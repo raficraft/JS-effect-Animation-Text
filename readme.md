@@ -87,5 +87,5 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 Le script est livré avec un fichier CSS, contenant quatre animation de texte. Vous pouvez créer vos propres animation et les attaché à votre texte avec le paramètre "keyframes".
 
-NB : Pour l'animation lettre par lettre, les espacement sont considéré comme des caractères à part entiène.
+NB : Pour l'animation lettre par lettre, les espacement sont considéré comme des caractères à part entière.
 
