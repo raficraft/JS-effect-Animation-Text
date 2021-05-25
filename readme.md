@@ -27,25 +27,21 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 - Utilisé l'attribut de donnée "textAnimated-name" sur le texte à animé
 
 ```HTML
-
   <section textAnimatedContainer>
-
     <h1 textAnimated-name='first'>Un bug ? Une panne ? Un accident ?</h1>
     <h1 textAnimated-name='second'>La solution!</h1>
     <h1 textAnimated-name='third'>#ashtag & @robase</h1>
     <h1 textAnimated-name='four'>06 88 15 87 99</h1>
     <h1 textAnimated-name="five">Agence Lyon Sud - Serezin du rhône</h1>
-    <h1 textAnimated-name="six">Du Lundi au Samedi 9h - 19h</h1>
- 
+    <h1 textAnimated-name="six">Du Lundi au Samedi 9h - 19h</h1> 
   </section>
-
 ```
 
 - NB : vous pouvez utiliser les mêmes attribut de données que dans l'exemple mais ce n'est pas obligatoire. Vous pouvez ciblé les éléments HTML avec des selecteurs classique. Seul le seclecteur du container parent doit être unique.
 
 ## Utilisation
 
-- Instacié la Class dans votre balise script ou à la suite de la Class elle même.
+- Instanncié la Class dans votre balise script ou à la suite de la Class elle même et ce pour chaque texte à animé.
 
 ```HTML
 <script type="text/javascript" src="engine/TextAninated.js" defer>
@@ -53,8 +49,10 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
   method : 'wordByWord',
   container : '[textAnimatedContainer]',
   child : '[textAnimated-name="first"]',
-  lineBreak : [2,5],  
+  lineBreak : [2,5],    
   keyframes : 'titleRevealY'
+  animationDelay : 0.1,
+  animationOffset : 7
   })
 </script>
 ```
@@ -68,9 +66,9 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 - child : Element du dom à animé. Sélécteur CSS (id,class...) ou attribut de données.
 - lineBreak : Tableau numérique indiquant ou effectuer des saut de lignes (voir, précisions).
 - keyframes : Fait référence à l'animation css associé 
-- animationDuration : Durée de l'animation des mots ou lettre du texte.
-- shiftDelay : Délai d'animation entre deux mots ou deux lettres (voir, précisions).
-- animationDelay : Délait de décalage d'animation.
+- animationDuration : Durée de l'animation en seconde des mots ou lettre du texte.
+- shiftDelay : Délai d'animation en seconde entre deux mots ou deux lettres (voir, précisions).
+- animationDelay : Délai en seconde de décalage d'animation.
 - spacingDimension : Dimension d'espacement entre les mots pour l'animation lettre par lettre
 
 # Précision sur les paramètres
