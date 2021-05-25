@@ -1,10 +1,10 @@
-#Animation de texte. Mot à mot ou lettre par lettre
+# Animation de texte. Mot à mot ou lettre par lettre
 
 Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou lettre par lettre.
 
 #Installation et utilisation
 
-##Instalation
+## Instalation
 
 -Copier le script dans votre repértoire JS (engine dans l'exemple ci-dessous)
 -Linké le script dans votre fichier HTML
@@ -40,7 +40,7 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 -NB : vous pouvez utiliser les mêmes attribut de données que dans l'exemple mais ce n'est pas obligatoire. Vous pouvez ciblé les éléments HTML avec des selecteurs classique. Seul le seclecteur du container parent doit être unique.
 
-##Utilisation
+## Utilisation
 
 -Instacié la Class dans votre balise script ou la suite de la Class elle même.
 
@@ -59,5 +59,5 @@ Class Utilitaire javascript permettant d'animer tout type de texte mot à mot ou
 
 ```
 
-#Paramètres
+# Paramètres
 
