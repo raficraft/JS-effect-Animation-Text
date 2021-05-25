@@ -18,10 +18,10 @@ class TextAnimated{
 
       method : 'wordByWord',
       container : '',
-      lineBreak : [],
       child : '', //Attribut textAnimated-name 
+      lineBreak : [],
       keyframes : '', //nom de l'animation à appliqué
-      animationDuration : 0.7, // Durée de l'animation de l'élément mot ou lettre
+      animationDuration : 0.7, //Durée de l'animation des mots ou lettre du texte
       shiftDelay : 0.2, //Délai d'animation entre deux mots ou deux lettre.    
       animationOffset : 0 //Délai de lancement de l'animation global.
 
